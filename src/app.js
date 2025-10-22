@@ -23,7 +23,6 @@ app.use("/api/users", userRoutes);
 app.use("/api/transactions", transactionRoutes);
 
 
-// central error handler
 app.use(errorHandler);
 
 

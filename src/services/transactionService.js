@@ -1,7 +1,7 @@
 import prisma from "../config/prisma.js";
 
 
-const WITHDRAWAL_LIMIT = 20; // per-request withdrawal cap
+const WITHDRAWAL_LIMIT = 20; 
 
 
 export const createTransaction = async (data) => {

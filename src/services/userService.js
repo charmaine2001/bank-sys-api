@@ -25,7 +25,6 @@ return prisma.user.findUnique({ where: { id } });
 
 
 export const updateUser = async (id, data) => {
-// prevent password updates here; implement separate flow if required
 return prisma.user.update({ where: { id }, data });
 };
 

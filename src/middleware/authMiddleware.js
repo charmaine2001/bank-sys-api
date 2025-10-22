@@ -14,7 +14,7 @@ const user = await prisma.user.findUnique({ where: { id: payload.userId } });
 if (!user) return res.status(401).json({ message: "Unauthorized" });
 
 
-req.user = user; // attach full user object (beware of sensitivity)
+req.user = user;
 next();
 } catch (err) {
 console.error(err);
